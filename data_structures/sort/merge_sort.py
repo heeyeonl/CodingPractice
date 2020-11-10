@@ -8,7 +8,7 @@ def merge_sort(arr):
     merge_sort_2(arr, 0, len(arr)-1) # user calls given one array
 
 def merge_sort_2(arr, first, last):
-    if first < last:    # if arr is longer than one
+    if first < last:    # if arr has more than one
         mid = (first + last) // 2     # find the mid index
         merge_sort_2(arr, first, mid)    # left side
         merge_sort_2(arr, mid+1, last)   # right side
@@ -31,4 +31,7 @@ def merge(arr, first, mid, last):
 A = [5,9,1,2,4,8,6,3,7]
 print(A)
 merge_sort(A)
-print(A)
+print(A)    # this is in-place sort so done in original arr.
+
+# sidenote: sort() -> modifies the list in-place
+#           sorted() -> new sorted list that is iterable
