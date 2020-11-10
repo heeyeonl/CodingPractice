@@ -2,6 +2,9 @@
 # Since it divdies in half and merge makes it double of its size, its time complexity is O(nlogn). -> we are comparing each one that is n work time.
 # It is also recursive.
 # merge sort is good for big data because you can save half of the data when you merge sort.
+
+# https://www.youtube.com/watch?v=Nso25TkBsYI&list=PLj8W7XIvO93rJHSYzkk7CgfiLQRUEC2Sq&index=4
+
 import sys
 
 def merge_sort(arr):
