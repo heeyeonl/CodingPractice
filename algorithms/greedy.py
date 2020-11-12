@@ -23,3 +23,6 @@ for i in range(len(A)//2): # it should pair shortest + longest shift
         max = temp
 
 print("minimized total hours that worker should work for is", max, "hours.")
+
+# Example 2 
+# coine change
