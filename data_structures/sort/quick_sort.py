@@ -17,7 +17,7 @@ def quick_sort(sequence):
         items_lesser = []
         items_greater = []
         pivot = sequence.pop() # pop will extract the last element from the list
-        
+                               # it doesn't matter which pivot we use. 
         for item in sequence:
             if item > pivot:
                 items_greater.append(item)
