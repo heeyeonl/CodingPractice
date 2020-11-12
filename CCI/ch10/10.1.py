@@ -24,7 +24,7 @@ def merge2(arr1, arr2):
 
 # version 3
 def merge3(A, B):
-    index = len(A) - 1
+    index = len(A) - 1  # needs to start from back to add B to A. (already sorted lists, so largest from back)
     indexA = len(A) - len(B) - 1
     indexB = len(B) - 1
 
