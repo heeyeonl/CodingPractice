@@ -4,7 +4,7 @@
 
 def isUnique(string):
     chars = []
-    # chras = {}
+    # chars = {}
     for c in string:
         if c in chars:
             return False

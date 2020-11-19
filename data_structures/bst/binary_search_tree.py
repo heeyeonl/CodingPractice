@@ -2,8 +2,9 @@
 # because we are halfing the tree when we search deeper.
 # sidenote: O(1) > O(logn) > O(n) > O(nlogn) > O(n^*), O(*^n), O(n!)
 
+# JUST REMEMBER LEFT, RIRGHT, MID!!
 def search(arr, target):  # target is value we are looking for
-    left = 0
+    left = 0 
     right = len(arr) - 1
 
     while left <= right:

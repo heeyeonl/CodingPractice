@@ -20,10 +20,30 @@ def search1(target, arr):
             return i
 
 
-# Do modified binary search!!
+# Do modified binary search!! ***
+# YouTube: https://www.youtube.com/watch?v=oRllj-ObrBU
 # version 2 (faster, O(logn))
+def search2(target, arr):
+    num = len(arr)
+    left = 0
+    right = num - 1
+
+    if num == 0:
+        return -1
+    while left <= right:
+        mid = (left + right) // 2
+        if target == arr[mid]:
+            return mid
+        
+        if target <= arr[mid]:
+            if arr[left] <= target <= arr[mid]:
+                right = mid - 1
+            else:
+                
+        
 
 
 A = [15, 16, 19, 20, 25, 1, 3, 4, 5, 7, 10, 14]
-target = 5
+B = [7, 8, 9, 1, 2, 3, 4, 5, 6]
+target = 7
 print(search1(target, A))

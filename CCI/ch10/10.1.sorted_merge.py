@@ -40,7 +40,7 @@ def merge3(A, B):
 
 
 # These are array generators. (optional)
-def FillArrayWithBuffer(numItems, bufferSize):
+def fillArrayWithBuffer(numItems, bufferSize):
     arr = []
     for i in range(numItems + bufferSize):
         if i < numItems:
@@ -49,14 +49,14 @@ def FillArrayWithBuffer(numItems, bufferSize):
             arr.append(0)
     return arr
 
-def FillArray(numItems):
+def fillArray(numItems):
     arr = []
     for i in range(numItems):
         arr.append(2 * i + 4)
     return arr
 
-A = FillArrayWithBuffer(5, 8)
-B = FillArray(8)
+A = fillArrayWithBuffer(5, 8)
+B = fillArray(8)
 print(A)
 print(B)
 # print(merge1(A, B))
