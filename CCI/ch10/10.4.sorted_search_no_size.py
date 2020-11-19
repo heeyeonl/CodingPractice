@@ -29,7 +29,7 @@ def searchListy(list, value):
 
 def binary_search(list, value, left, right):
     while left <= right:
-        mid = (left + right) // 2
+        mid = (left + right) // 2 # should not be float. use //
         mid_val = list.elementAt(mid)
         if value == mid_val:
             return mid
