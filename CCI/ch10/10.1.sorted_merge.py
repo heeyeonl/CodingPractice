@@ -8,22 +8,7 @@
 # Or I can just merge sort A and B into A so that space complexity stays the same?
 # Merge sort time complexity is O(nlogn).
 
-# version 1 (X)
-def merge1(arr1, arr2):
-    arr = arr1 + arr2 # this creates new array. More space.
-    arr.sort()
-    return arr
-
-
-# version 2 (X)
-def merge2(arr1, arr2):
-    for item in arr2:
-        arr1.append(item)
-    arr1.sort() # the point is I should write sort function...
-    return arr1
-
-# version 3
-def merge3(A, B):
+def merge(A, B):
     index = len(A) - 1  # needs to start from back to add B to A. (already sorted lists, so largest from back)
     indexA = len(A) - len(B) - 1
     indexB = len(B) - 1
@@ -59,6 +44,4 @@ A = fillArrayWithBuffer(5, 8)
 B = fillArray(8)
 print(A)
 print(B)
-# print(merge1(A, B))
-# print(merge2(A, B))
-print(merge3(A, B))
+print(merge(A, B))
