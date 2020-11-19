@@ -24,11 +24,11 @@ def search1(target, arr):
 # YouTube: https://www.youtube.com/watch?v=oRllj-ObrBU
 # version 2 (faster, O(logn))
 def search2(target, arr):
-    num = len(arr)
+    length = len(arr)
     left = 0
-    right = num - 1
+    right = length - 1
 
-    if num == 0:
+    if length == 0:
         return -1
     while left <= right:
         mid = (left + right) // 2
@@ -40,10 +40,10 @@ def search2(target, arr):
                 right = mid - 1
             else:
                 
-        
 
 
 A = [15, 16, 19, 20, 25, 1, 3, 4, 5, 7, 10, 14]
 B = [7, 8, 9, 1, 2, 3, 4, 5, 6]
 target = 7
 print(search1(target, A))
+print(search2(target, A))
