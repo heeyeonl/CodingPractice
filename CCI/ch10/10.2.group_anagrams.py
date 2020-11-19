@@ -18,7 +18,7 @@
 def groupAnagrams(A):
     dict = {}       # 0. create dictionary
     for word in A:  # 1. sort each word
-        key = "".join(sorted(word)) # 2. make key
+        key = "".join(sorted(word)) # 2. make key using sorted()
         if key not in dict:         # 3. if key does not exist, add to dictionary with value
             dict[key] = [word]
         else:       # 4. if exists in dict, then append value to the key
