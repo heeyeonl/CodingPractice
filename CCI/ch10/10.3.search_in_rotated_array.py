@@ -34,11 +34,32 @@ def search2(target, arr):
         mid = (left + right) // 2
         if target == arr[mid]:
             return mid
-        
-        if target <= arr[mid]:
+        if arr[left] <= arr[mid]: # it's important to compare arr[left] & arr[mid], not left & arr[mid]
             if arr[left] <= target <= arr[mid]:
                 right = mid - 1
             else:
+                left = mid + 1
+        elif target > arr[mid]:
+            if arr[mid] <= target <= arr[right]:
+                left = mid + 1
+            else:
+                right = mid - 1
+    return None
+
+
+def normalBST(target, arr): # target is value
+    length = len(arr)
+    left = 0
+    right = length - 1
+    while left <= right:
+        mid = (left + right) // 2
+        if arr[mid] == target:
+            return mid
+        elif target <= arr[mid]:
+            right = mid - 1
+        else:
+            left = mid + 1
+    return -1
                 
 
 
