@@ -1,4 +1,5 @@
-# Group Anagrams: Write a method to sort an array of strings so that all the anagrams are next to each other.
+# 10.2 Group Anagrams:
+#   Write a method to sort an array of strings so that all the anagrams are next to each other.
 #
 # Q: What is anagram?
 # A: An anagram is a word or phrase formed by rearranging the letters of a different word or phrase, 

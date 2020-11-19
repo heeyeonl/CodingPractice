@@ -1,6 +1,8 @@
-# Check Permutation: Given two strings, wrtie a method to decide if one is a
-# permutation of the other
-# Hints: #1, #84, #122, #131
+# 1.2 Check Permutation: 
+#   Given two strings, wrtie a method to decide if one is a
+#   permutation of the other
+#   Hints: #1, #84, #122, #131
+# 
 # Notes: 
 #       - permutation: one of several possible variants
 #       - len(str1) == len(str2)
