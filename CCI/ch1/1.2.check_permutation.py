@@ -19,7 +19,23 @@ def isPermutation(str1, str2):
     # Counter essentially creates a list of frequencies.
     # (Imagine a string with 1,000,000,000 characters.)
 
+
+from collections import Counter
+def isPermutation2(str1, str2):
+    counter = Counter()
+    for c in str1:
+        counter[c] += 1
+    for c in str2:
+        if c not in counter:
+            return False
+        counter[c] -= 1
+        if counter[c] == 0:
+            del counter[c]
+    return len(counter) == 0
+    
+
 if __name__ == "__main__":
     import sys
-    print(isPermutation(sys.argv[1], sys.argv[2]))
+    # print(isPermutation(sys.argv[1], sys.argv[2]))
+    print(isPermutation2(sys.argv[1], sys.argv[2]))
 
