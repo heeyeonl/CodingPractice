@@ -10,22 +10,23 @@
 
 
 # The key here is that it has sufficient space at the end ==> working backwards is no problem.
-def URLify(str, len):
-    print(str)
-    print(len)
-    url_str = []
-    i = int(len) - 1 # conver python string to int
-    print(i)
-    for c in reversed(str):
-        if c == ' ':
-            url_str[i-2] = '%'
-            url_str[i-1] = '2'
-            url_str[i] = '0'
-            i = i - 3
+def URLify(str, length):
+    url_str = [None] * len(str)
+    i = int(length) - 1    # i = pointer for str
+    j = len(str) - 1       # j = pointer for url_str
+
+    while i != -1:
+        if str[i] == ' ':
+            url_str[j - 2] = '%'
+            url_str[j - 1] = '2'
+            url_str[j] = '0'
+            j -= 3
+            i -= 1
         else:
-            url_str[i] = c
-    # print(i)
-    return url_str
+            url_str[j] = str[i]
+            j -= 1
+            i -= 1
+    return ''.join(url_str)
 
 if __name__ == "__main__":
     import sys
