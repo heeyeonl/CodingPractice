@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7899b68-d369-4527-99bd-8a9bd59494fd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../data_structures/array/array" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data_structures/bst/binary_search_tree.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data_structures/hash_table.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data_structures/sort/bubble_sort.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data_structures/sort/merge_sort.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data_structures/sort/quick_sort.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data_structures_java/array/basic_array.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data_structures_java/array/basic_array.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/array/basic_array.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/basic_array.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -23,8 +18,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/array/basic_array.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+            <state relative-caret-position="240">
+              <caret line="16" column="49" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -88,7 +83,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1611334121074" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1611334881169" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -140,7 +135,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="796" y="0" width="884" height="1050" extended-state="6" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
@@ -174,8 +169,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/array/basic_array.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+        <state relative-caret-position="240">
+          <caret line="16" column="49" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
         </state>
       </provider>
     </entry>
