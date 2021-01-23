@@ -12,11 +12,12 @@ public class bubble_sort {
 
     public static void main(String[] args) {
         int[] bubble = {20, 35, -15, 7, 55, 1, -22};
-
+        int numSwap = 0;
         for(int i=bubble.length-1; i > 0; i--) {    // from the last to the first index
             for (int j=0; j < i; j++) {
                 if(bubble[j] > bubble[j+1]) {
                     swap(bubble, j, j + 1);         // ascending order
+                    numSwap++;
                 }
             }
         }
@@ -24,6 +25,7 @@ public class bubble_sort {
         for (int i: bubble) {
             System.out.print(i + " ");
         }
+        System.out.println("\nnumber of swaps: " + numSwap);
     }
 
     private static void swap(int[] array, int i, int j) {
