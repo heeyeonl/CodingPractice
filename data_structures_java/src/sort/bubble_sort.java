@@ -1,13 +1,15 @@
 package sort;
 
+
+/*
+    In-place algorithm
+    O(n^2) time complexity - quadratic algorithm
+        It will take 100 steps to sort 10 items.
+    Algorithm degrades quickly.
+    Not really efficient so not used a lot.
+ */
 public class bubble_sort {
 
-    /*
-        In-place algorithm
-        O(n^2) time complexity - quadratic algorithm
-            It will take 100 steps to sort 10 items.
-        Algorithm degrades quickly.
-     */
     public static void main(String[] args) {
         int[] bubble = {20, 35, -15, 7, 55, 1, -22};
 
