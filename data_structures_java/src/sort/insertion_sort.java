@@ -10,8 +10,20 @@ public class insertion_sort {
     public static void main(String[] args) {
 
         int[] array = { 20, 35, -15, 7, 55, 1, -22 };
+        int[] result;
 
+//        result = sort1(array);
+        result = sort2(array);
+
+        for (int i : result){
+            System.out.println(i);
+        }
+    }
+
+    // my initial version
+    private static int[] sort1(int[] array) {
         for (int i = 0; i < array.length; i++) {
+
             int temp = array[i];
             int k = i;
 
@@ -22,16 +34,22 @@ public class insertion_sort {
                     k--;
                 }
             }
-//            Another way to do this shifting... (int i = 1)
-//            int j;
-//            for (j = i; j > 0 && array[j - 1] > temp; j--) {
-//                array[j] = array[j - 1];
-//            }
-//            array[j] = temp;
         }
+        return array;
+    }
 
-        for (int i : array){
-            System.out.println(i);
+    // lecture version
+    private static int[] sort2(int[] array) {
+        for (int i = 1; i < array.length; i++) {
+
+            int temp = array[i];
+            int j;
+
+            for (j = i; j > 0 && array[j - 1] > temp; j--) {
+                array[j] = array[j - 1];
+            }
+            array[j] = temp;
         }
+        return array;
     }
 }
