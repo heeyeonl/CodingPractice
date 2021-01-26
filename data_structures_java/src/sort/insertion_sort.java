@@ -8,7 +8,6 @@ public class insertion_sort {
         Stable algorithm
      */
     public static void main(String[] args) {
-
         int[] array = { 20, 35, -15, 7, 55, 1, -22 };
         int[] result;
 
@@ -28,6 +27,7 @@ public class insertion_sort {
             int k = i;
 
             for (int j = k; j >= 0; j--) {
+                System.out.println("i: " + i + ", j: " + j);
                 if (array[k] < array[j]) {
                     array[k] = array[j];
                     array[j] = temp;
@@ -38,14 +38,16 @@ public class insertion_sort {
         return array;
     }
 
-    // lecture version
+    // more correct version
     private static int[] sort2(int[] array) {
         for (int i = 1; i < array.length; i++) {
 
             int temp = array[i];
+            System.out.println("temp : " + temp);
             int j;
 
             for (j = i; j > 0 && array[j - 1] > temp; j--) {
+                System.out.println("i: " + i + ", j: " + j);
                 array[j] = array[j - 1];
             }
             array[j] = temp;
