@@ -6,6 +6,7 @@ public class insertion_sort {
         In-place algorithm
         O(n^2) time complexity - quadratic
         Stable algorithm
+        * Comparison gap is always 1.
      */
     public static void main(String[] args) {
         int[] array = { 20, 35, -15, 7, 55, 1, -22 };
@@ -19,7 +20,7 @@ public class insertion_sort {
         }
     }
 
-    // my initial version
+    // my initial version (wrong, gap is bigger than 1 and inefficient)
     private static int[] sort1(int[] array) {
         for (int i = 0; i < array.length; i++) {
 
