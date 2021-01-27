@@ -23,7 +23,7 @@ public class shell_sort {
                 int newElement = intArray[i];
 
                 while (j >= gap && intArray[j - gap] > newElement) { // use newElement instead of intArray[i] because it keeps changing
-                    intArray[i] = intArray[j - gap];
+                    intArray[j] = intArray[j - gap];
                     j -= gap;
                 }
                 intArray[j] = newElement;

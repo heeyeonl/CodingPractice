@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b7899b68-d369-4527-99bd-8a9bd59494fd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/data_structures_java/sort/insertion_sort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data_structures_java/sort/insertion_sort.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sort/shell_sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sort/shell_sort.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,6 +81,7 @@
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1611682452429" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -187,7 +187,7 @@
       <option name="presentableId" value="Default" />
       <updated>1611332846251</updated>
       <workItem from="1611684676552" duration="54000" />
-      <workItem from="1611760139882" duration="2777000" />
+      <workItem from="1611760139882" duration="3406000" />
     </task>
     <servers />
   </component>
