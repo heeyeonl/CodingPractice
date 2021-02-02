@@ -20,5 +20,37 @@ public class merge_sort {
             - After the first merge, we'll have a bunch of 2-element sorted arrays
             - Then merge those sorted arrays (left/right siblings) to end up with a bunch of 4-element sorted array
             - not in-place, uses temporary arrays
+
+        Merging process
+            - we merge sibling left and right arrays
+            - We create a temporary array large enough to hold all the elements in the arrays we're merging
+            - We set i to the first index of the left array, and j to the first index of the right array
      */
+    public static void main(String[] args) {
+        int[] array = {20, 35, -15, 7, 55, 1, -22};
+
+
+        for (int i: array) {
+            System.out.println(i);
+        }
+    }
+
+    public static void mergeSort(int[] input, int start, int end) {
+        // recursion needs breaking condition
+        if (end - start < 2) { // only has one element
+            return;
+        }
+        int mid = (start + end) / 2;
+        mergeSort(input, start, mid); // {20, 35, -15} Left
+        mergeSort(input, mid, end); // {7, 55, 1, -22} Right
+        merge(input, start, mid, end);
+    }
+
+    public static void merge(int[] input, int start, int mid, int end) {
+        // with 2 sorted arrays, if the smallest element in the right is bigger than the largest element of left
+        if (input[mid - 1] <= input[mid]) { // optimization
+            return;
+        }
+
+    }
 }

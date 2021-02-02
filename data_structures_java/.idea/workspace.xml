@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7899b68-d369-4527-99bd-8a9bd59494fd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/sort/merge_sort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sort/insertion_sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sort/insertion_sort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sort/merge_sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sort/merge_sort.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,7 +189,7 @@
       <workItem from="1611684676552" duration="54000" />
       <workItem from="1611760139882" duration="3608000" />
       <workItem from="1612239118326" duration="2003000" />
-      <workItem from="1612286713906" duration="232000" />
+      <workItem from="1612286713906" duration="1933000" />
     </task>
     <servers />
   </component>
