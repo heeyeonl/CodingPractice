@@ -14,7 +14,6 @@ public class insertion_sort {
 
 //        result = sort1(array);
         result = sort2(array);
-
         for (int i : result){
             System.out.println(i);
         }
