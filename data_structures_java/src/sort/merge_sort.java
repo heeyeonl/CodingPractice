@@ -29,28 +29,41 @@ public class merge_sort {
     public static void main(String[] args) {
         int[] array = {20, 35, -15, 7, 55, 1, -22};
 
+        mergeSort(array, 0, array.length);
 
+        System.out.println("\narray");
         for (int i: array) {
-            System.out.println(i);
+            System.out.print(i + " ");
         }
     }
 
-    public static void mergeSort(int[] input, int start, int end) {
-        // recursion needs breaking condition
-        if (end - start < 2) { // only has one element
+    public static void mergeSort(int[] array, int start, int end) {
+        if (end - start == 1) { // break condition for recursion
             return;
         }
         int mid = (start + end) / 2;
-        mergeSort(input, start, mid); // {20, 35, -15} Left
-        mergeSort(input, mid, end); // {7, 55, 1, -22} Right
-        merge(input, start, mid, end);
+        mergeSort(array, start, mid);
+        mergeSort(array, mid, end);
+        merge(array, start, mid, end);
     }
 
     public static void merge(int[] input, int start, int mid, int end) {
-        // with 2 sorted arrays, if the smallest element in the right is bigger than the largest element of left
-        if (input[mid - 1] <= input[mid]) { // optimization
+        if (input[mid - 1] <= input[mid]) {
             return;
         }
 
+        int i = start;
+        int j = mid;
+        int tempIndex = 0;
+
+        int[] temp = new int[end - start];
+        while (i < mid && j < end) {
+            temp[tempIndex++] = input[i] <= input[j] ? input[i++] : input[j++];
+        }
+
+        // if the left is traversed all the way this won't do anything
+        // System.arraycopy(src, srcPosition, destination, destPosition, length)
+        System.arraycopy(input, i, input, start + tempIndex, mid - i);
+        System.arraycopy(temp, 0, input, start, tempIndex);
     }
 }
