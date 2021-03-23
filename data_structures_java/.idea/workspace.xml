@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7899b68-d369-4527-99bd-8a9bd59494fd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/sort/quick_sort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data_structures_java/sort/merge_sort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data_structures_java/sort/merge_sort.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sort/merge_sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sort/merge_sort.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -88,7 +90,7 @@
     <property name="settings.editor.selected.configurable" value="Errors" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
-  <component name="RunManager" selected="Application.merge_sort">
+  <component name="RunManager" selected="Application.quick_sort">
     <configuration name="bubble_sort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="sort.bubble_sort" />
       <module name="data_structures_java" />
@@ -128,8 +130,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="selection_sort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sort.selection_sort" />
+    <configuration name="quick_sort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sort.quick_sort" />
       <module name="data_structures_java" />
       <extension name="coverage">
         <pattern>
@@ -167,11 +169,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.quick_sort" />
         <item itemvalue="Application.merge_sort" />
         <item itemvalue="Application.shell_sort" />
         <item itemvalue="Application.insertion_sort" />
         <item itemvalue="Application.bubble_sort" />
-        <item itemvalue="Application.selection_sort" />
       </list>
     </recent_temporary>
   </component>
@@ -191,6 +193,7 @@
       <workItem from="1612239118326" duration="2003000" />
       <workItem from="1612286713906" duration="2033000" />
       <workItem from="1612379025861" duration="3873000" />
+      <workItem from="1616522356348" duration="1907000" />
     </task>
     <servers />
   </component>

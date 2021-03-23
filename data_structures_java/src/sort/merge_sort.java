@@ -3,6 +3,7 @@ package sort;
 public class merge_sort {
     /*
         Divide and conquer algorithm
+        O(nlogn)
         Recursive algorithm
         2 Phases: Splitting and Merging
             Splitting phase leads to faster sorting during the Merging phase
